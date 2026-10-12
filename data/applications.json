@@ -1,0 +1,734 @@
+[
+  {
+    "application_id": "LIQ-EGMN58",
+    "submitted_at": "2026-10-12T06:43:32.017Z",
+    "loan_type": "vehicle",
+    "assessment_outcome": "Refer for human review",
+    "credit_risk_tier": "Moderate",
+    "calibrated_probability": 0.95,
+    "model_name": "LoanIQ Hybrid ML & Affordability Engine (v2.0)",
+    "model_version": "2.0.0",
+    "loan_product_support_status": "prototype_affordability_only",
+    "financial_metrics": {
+      "total_gross_monthly_income": 100000,
+      "total_net_monthly_income": 70000,
+      "proposed_emi": 31158.29,
+      "annual_interest_rate_pct": 9,
+      "dti_pct": 5,
+      "foir_pct": 51.65,
+      "disposable_income": 33841.71,
+      "lti_ratio": 1.25,
+      "credit_utilization_pct": 50,
+      "ltv_pct": 1876.25
+    },
+    "decision_rationale": "Application meets preliminary quantitative criteria, but business operating variability or borderline debt ratios require underwriter review. Note: For vehicle loans, assessment is evaluated using financial affordability rules; specialized institutional vehicle ML models require authorized commercial portfolio data.",
+    "applicant_factors": [
+      {
+        "factor": "Credit History Record",
+        "impact": "positive",
+        "description": "Documented satisfactory repayment history on past facilities strongly indicates low default propensity.",
+        "importance": 41.8
+      },
+      {
+        "factor": "Fixed-Obligation-to-Income (FOIR)",
+        "impact": "neutral",
+        "description": "Moderate FOIR of 51.65%. Repayments absorb over half of net take-home pay, leaving narrower safety room.",
+        "importance": 28.5
+      },
+      {
+        "factor": "Monthly Disposable Buffer",
+        "impact": "positive",
+        "description": "Comfortable surplus disposable income of ₹33,841.71 per month remaining after all obligations.",
+        "importance": 22
+      },
+      {
+        "factor": "Loan-to-Value (LTV)",
+        "impact": "negative",
+        "description": "High LTV of 1876.25% exceeds standard 80% ceiling. Higher down payment recommended to reduce lender exposure.",
+        "importance": 15
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Application routed to senior credit analyst for manual risk appraisal.",
+      "Prepare GST turnover certificates and business profit/loss statements if requested."
+    ],
+    "input_data": {
+      "loan_type": "vehicle",
+      "loan_purpose": "To Buy the car",
+      "loan_amount": 1501,
+      "loan_amount_term": 60,
+      "interest_rate": 9,
+      "collateral_type": "Registered Motor Vehicle",
+      "collateral_value": 80,
+      "down_payment": 50,
+      "married": "Yes",
+      "dependents": "3+",
+      "education": "Graduate",
+      "self_employed": "Yes",
+      "employment_category": "business_owner",
+      "employment_duration_months": 60,
+      "applicant_income": 100000,
+      "net_monthly_income": 70000,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 0,
+      "business_turnover": 0,
+      "business_operating_costs": 0,
+      "business_net_profit": 0,
+      "existing_monthly_emi": 5000,
+      "other_monthly_debt": 0,
+      "credit_card_outstanding": 200000,
+      "credit_card_limit": 400000,
+      "essential_living_expenses": 0,
+      "has_credit_history": true,
+      "credit_history": "1",
+      "credit_score": 740,
+      "late_payments_defaults": false,
+      "recent_credit_enquiries": 1,
+      "credit_history_length_months": 48,
+      "property_area": "Semiurban",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  },
+  {
+    "application_id": "LIQ-WOVQR9",
+    "submitted_at": "2026-10-12T06:37:26.099Z",
+    "loan_type": "personal",
+    "assessment_outcome": "Not eligible under the configured policy",
+    "credit_risk_tier": "High",
+    "calibrated_probability": 0.05,
+    "model_name": "LoanIQ Hybrid ML & Affordability Engine (v2.0)",
+    "model_version": "2.0.0",
+    "loan_product_support_status": "fully_supported_ml",
+    "financial_metrics": {
+      "total_gross_monthly_income": 87000,
+      "total_net_monthly_income": 72700,
+      "proposed_emi": 7026094.14,
+      "annual_interest_rate_pct": 11.5,
+      "dti_pct": 0,
+      "foir_pct": 9664.5,
+      "disposable_income": -6967394.14,
+      "lti_ratio": 143.68,
+      "credit_utilization_pct": 0,
+      "ltv_pct": null
+    },
+    "decision_rationale": "Application exceeds institutional debt thresholds (FOIR 9664.5% and negative monthly disposable income). The requested repayment is not supported by current cash flow.",
+    "applicant_factors": [
+      {
+        "factor": "Credit History Record",
+        "impact": "negative",
+        "description": "Historical records show documented past late payments or settled accounts (significant statistical risk factor).",
+        "importance": 41.8
+      },
+      {
+        "factor": "Fixed-Obligation-to-Income (FOIR)",
+        "impact": "negative",
+        "description": "Elevated FOIR of 9664.5% exceeds typical 55% underwriting threshold, creating debt-service pressure.",
+        "importance": 28.5
+      },
+      {
+        "factor": "Monthly Disposable Buffer",
+        "impact": "negative",
+        "description": "Negative estimated disposable income (deficit of ₹6,967,394.14/mo) indicates serviceability shortfall.",
+        "importance": 22
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Consider reducing the requested loan amount or lengthening the tenure to lower monthly EMI.",
+      "Add an eligible co-applicant with verified secondary income."
+    ],
+    "input_data": {
+      "loan_type": "personal",
+      "loan_purpose": "Residential Apartment Purchase",
+      "loan_amount": 150001,
+      "loan_amount_term": 24,
+      "interest_rate": 11.5,
+      "collateral_type": "",
+      "collateral_value": 0,
+      "down_payment": 50,
+      "married": "Yes",
+      "dependents": "2",
+      "education": "Graduate",
+      "self_employed": "No",
+      "employment_category": "salaried",
+      "employment_duration_months": 24,
+      "applicant_income": 65000,
+      "net_monthly_income": 54000,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 22000,
+      "business_turnover": 0,
+      "business_operating_costs": 0,
+      "business_net_profit": 0,
+      "existing_monthly_emi": 0,
+      "other_monthly_debt": 0,
+      "credit_card_outstanding": 0,
+      "credit_card_limit": 40000,
+      "essential_living_expenses": 14000,
+      "has_credit_history": true,
+      "credit_history": "0",
+      "credit_score": 738,
+      "late_payments_defaults": true,
+      "recent_credit_enquiries": 1,
+      "credit_history_length_months": 48,
+      "property_area": "Semiurban",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  },
+  {
+    "application_id": "LIQ-DIQ7XQ",
+    "submitted_at": "2026-10-12T06:24:58.826Z",
+    "loan_type": "home",
+    "assessment_outcome": "Eligible for further consideration",
+    "credit_risk_tier": "Low",
+    "calibrated_probability": 0.95,
+    "model_name": "LoanIQ Hybrid ML & Affordability Engine (v2.0)",
+    "model_version": "2.0.0",
+    "loan_product_support_status": "fully_supported_ml",
+    "financial_metrics": {
+      "total_gross_monthly_income": 9500,
+      "total_net_monthly_income": 7900,
+      "proposed_emi": 1388.52,
+      "annual_interest_rate_pct": 8.5,
+      "dti_pct": 6.32,
+      "foir_pct": 25.17,
+      "disposable_income": 4111.48,
+      "lti_ratio": 1.4,
+      "credit_utilization_pct": null,
+      "ltv_pct": 72.73
+    },
+    "decision_rationale": "Strong financial profile: healthy FOIR (25.17%), positive disposable cash buffer (₹4,111.48/mo), and clean repayment history.",
+    "applicant_factors": [
+      {
+        "factor": "Credit History Record",
+        "impact": "positive",
+        "description": "Documented satisfactory repayment history on past facilities strongly indicates low default propensity.",
+        "importance": 41.8
+      },
+      {
+        "factor": "Fixed-Obligation-to-Income (FOIR)",
+        "impact": "positive",
+        "description": "Healthy FOIR of 25.17%. Proposed EMI + debts absorb well below the typical 50% prudence ceiling.",
+        "importance": 28.5
+      },
+      {
+        "factor": "Monthly Disposable Buffer",
+        "impact": "positive",
+        "description": "Comfortable surplus disposable income of ₹4,111.48 per month remaining after all obligations.",
+        "importance": 22
+      },
+      {
+        "factor": "Loan-to-Value (LTV)",
+        "impact": "positive",
+        "description": "Sound collateral coverage with an LTV of 72.73%, meeting institutional collateral security benchmarks.",
+        "importance": 15
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Proceed to formal document verification and KYC check.",
+      "Review sanction letter terms and interest-rate options with lending officer."
+    ],
+    "input_data": {
+      "loan_type": "home",
+      "loan_purpose": "Home construction",
+      "loan_amount": 160,
+      "loan_amount_term": 240,
+      "interest_rate": 8.5,
+      "collateral_value": 220,
+      "down_payment": 0,
+      "married": "No",
+      "dependents": "0",
+      "education": "Graduate",
+      "self_employed": "No",
+      "employment_category": "salaried",
+      "employment_duration_months": 24,
+      "applicant_income": 7500,
+      "net_monthly_income": 6200,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 2000,
+      "business_turnover": 0,
+      "business_operating_costs": 0,
+      "business_net_profit": 0,
+      "existing_monthly_emi": 500,
+      "other_monthly_debt": 100,
+      "credit_card_outstanding": 0,
+      "credit_card_limit": 0,
+      "essential_living_expenses": 1800,
+      "has_credit_history": true,
+      "credit_history": "1",
+      "credit_score": null,
+      "late_payments_defaults": false,
+      "recent_credit_enquiries": 0,
+      "credit_history_length_months": 36,
+      "property_area": "Semiurban",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  },
+  {
+    "application_id": "LIQ-H1RY0I",
+    "submitted_at": "2026-10-12T06:24:21.908Z",
+    "loan_type": "home",
+    "assessment_outcome": "Eligible for further consideration",
+    "credit_risk_tier": "Low",
+    "calibrated_probability": 0.95,
+    "model_name": "LoanIQ Hybrid ML & Affordability Engine (v2.0)",
+    "model_version": "2.0.0",
+    "loan_product_support_status": "fully_supported_ml",
+    "financial_metrics": {
+      "total_gross_monthly_income": 9500,
+      "total_net_monthly_income": 7925,
+      "proposed_emi": 1518.69,
+      "annual_interest_rate_pct": 8.5,
+      "dti_pct": 7.37,
+      "foir_pct": 28,
+      "disposable_income": 4106.31,
+      "lti_ratio": 1.54,
+      "credit_utilization_pct": 10,
+      "ltv_pct": 76.09
+    },
+    "decision_rationale": "Strong financial profile: healthy FOIR (28%), positive disposable cash buffer (₹4,106.31/mo), and clean repayment history.",
+    "applicant_factors": [
+      {
+        "factor": "Credit History Record",
+        "impact": "positive",
+        "description": "Documented satisfactory repayment history on past facilities strongly indicates low default propensity.",
+        "importance": 41.8
+      },
+      {
+        "factor": "Fixed-Obligation-to-Income (FOIR)",
+        "impact": "positive",
+        "description": "Healthy FOIR of 28%. Proposed EMI + debts absorb well below the typical 50% prudence ceiling.",
+        "importance": 28.5
+      },
+      {
+        "factor": "Monthly Disposable Buffer",
+        "impact": "positive",
+        "description": "Comfortable surplus disposable income of ₹4,106.31 per month remaining after all obligations.",
+        "importance": 22
+      },
+      {
+        "factor": "Loan-to-Value (LTV)",
+        "impact": "positive",
+        "description": "Sound collateral coverage with an LTV of 76.09%, meeting institutional collateral security benchmarks.",
+        "importance": 15
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Proceed to formal document verification and KYC check.",
+      "Review sanction letter terms and interest-rate options with lending officer."
+    ],
+    "input_data": {
+      "loan_type": "home",
+      "loan_purpose": "Suburban Property Purchase",
+      "loan_amount": 175,
+      "loan_amount_term": 240,
+      "interest_rate": 8.5,
+      "collateral_value": 230,
+      "down_payment": 55,
+      "married": "Yes",
+      "dependents": "1",
+      "education": "Graduate",
+      "self_employed": "No",
+      "employment_category": "salaried",
+      "employment_duration_months": 40,
+      "applicant_income": 7000,
+      "net_monthly_income": 5800,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 2500,
+      "existing_monthly_emi": 500,
+      "other_monthly_debt": 200,
+      "credit_card_outstanding": 400,
+      "credit_card_limit": 4000,
+      "essential_living_expenses": 1600,
+      "has_credit_history": true,
+      "credit_history": "1",
+      "credit_score": 750,
+      "property_area": "Semiurban",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  },
+  {
+    "application_id": "LIQ-LPCBG5",
+    "submitted_at": "2026-10-12T05:52:27.701Z",
+    "loan_type": "home",
+    "assessment_outcome": "Eligible for further consideration",
+    "credit_risk_tier": "Low",
+    "calibrated_probability": 0.96,
+    "model_name": "Random Forest (200 Trees)",
+    "model_version": "1.0.0",
+    "loan_product_support_status": "fully_supported_ml",
+    "financial_metrics": {
+      "total_gross_monthly_income": 80000,
+      "total_net_monthly_income": 41000,
+      "proposed_emi": 31513,
+      "annual_interest_rate_pct": 8.5,
+      "dti_pct": 0.6,
+      "foir_pct": 78.1,
+      "disposable_income": 7487,
+      "lti_ratio": 1.6,
+      "credit_utilization_pct": 25,
+      "ltv_pct": null
+    },
+    "decision_rationale": "Based on the trained Random Forest model, this application exhibits a strong likelihood of approval (96.0% estimated probability). The primary positive driver is Credit History.",
+    "applicant_factors": [
+      {
+        "factor": "Credit History",
+        "impact": "positive",
+        "description": "Satisfactory credit history record strongly supports repayment likelihood.",
+        "importance": 41.8
+      },
+      {
+        "factor": "Income-to-Loan Ratio",
+        "impact": "positive",
+        "description": "Combined monthly income (₹80,000) provides substantial safety margin over requested loan (₹1,536,000).",
+        "importance": 34.3
+      },
+      {
+        "factor": "Co-applicant Guarantee",
+        "impact": "positive",
+        "description": "Additional secondary income of ₹30,000 mitigates single-earner risk.",
+        "importance": 9.3
+      },
+      {
+        "factor": "Property Location",
+        "impact": "positive",
+        "description": "Semiurban location exhibits the highest historical approval frequency (76.8%) in the training distribution.",
+        "importance": 5.1
+      },
+      {
+        "factor": "Repayment Term",
+        "impact": "positive",
+        "description": "Shorter amortization period (60 months) reduces long-term default exposure.",
+        "importance": 3.8
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Proceed to formal verification and KYC check."
+    ],
+    "input_data": {
+      "loan_type": "home",
+      "loan_purpose": "Residential Property Purchase",
+      "loan_amount": 1536,
+      "loan_amount_term": 60,
+      "interest_rate": 8.5,
+      "married": "Yes",
+      "dependents": "2",
+      "education": "Not Graduate",
+      "self_employed": "Yes",
+      "employment_category": "salaried",
+      "employment_duration_months": 36,
+      "applicant_income": 50000,
+      "net_monthly_income": 41000,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 30000,
+      "existing_monthly_emi": 500,
+      "other_monthly_debt": 100,
+      "credit_card_outstanding": 500,
+      "credit_card_limit": 4000,
+      "essential_living_expenses": 1500,
+      "has_credit_history": true,
+      "credit_history": "1",
+      "property_area": "Semiurban",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  },
+  {
+    "application_id": "LIQ-8E4A91",
+    "submitted_at": "2026-10-09T05:34:23.905Z",
+    "loan_type": "home",
+    "assessment_outcome": "Eligible for further consideration",
+    "credit_risk_tier": "Low",
+    "calibrated_probability": 0.8842,
+    "model_name": "Random Forest (200 Trees)",
+    "model_version": "1.0.0",
+    "loan_product_support_status": "fully_supported_ml",
+    "financial_metrics": {
+      "total_gross_monthly_income": 8600,
+      "total_net_monthly_income": 5084,
+      "proposed_emi": 1230,
+      "annual_interest_rate_pct": 8.5,
+      "dti_pct": 5.8,
+      "foir_pct": 34,
+      "disposable_income": 1854,
+      "lti_ratio": 1.55,
+      "credit_utilization_pct": 25,
+      "ltv_pct": null
+    },
+    "decision_rationale": "Strong income coverage, positive credit history record, and favorable semiurban residential district.",
+    "applicant_factors": [
+      {
+        "factor": "Credit History",
+        "impact": "positive",
+        "description": "Satisfactory credit history record strongly supports repayment likelihood.",
+        "importance": 41.8
+      },
+      {
+        "factor": "Income-to-Loan Ratio",
+        "impact": "positive",
+        "description": "Combined monthly income (₹8,600) provides substantial safety margin over requested loan.",
+        "importance": 34.3
+      },
+      {
+        "factor": "Property Location",
+        "impact": "positive",
+        "description": "Semiurban location exhibits the highest historical approval frequency.",
+        "importance": 5.1
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Proceed to formal verification and KYC check."
+    ],
+    "input_data": {
+      "loan_type": "home",
+      "loan_purpose": "Residential Property Purchase",
+      "loan_amount": 160,
+      "loan_amount_term": 360,
+      "interest_rate": 8.5,
+      "married": "Yes",
+      "dependents": "1",
+      "education": "Graduate",
+      "self_employed": "No",
+      "employment_category": "salaried",
+      "employment_duration_months": 36,
+      "applicant_income": 6200,
+      "net_monthly_income": 5084,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 2400,
+      "existing_monthly_emi": 500,
+      "other_monthly_debt": 100,
+      "credit_card_outstanding": 500,
+      "credit_card_limit": 4000,
+      "essential_living_expenses": 1500,
+      "has_credit_history": true,
+      "credit_history": "1",
+      "property_area": "Semiurban",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  },
+  {
+    "application_id": "LIQ-4C9F12",
+    "submitted_at": "2026-10-05T05:34:23.906Z",
+    "loan_type": "home",
+    "assessment_outcome": "Higher estimated repayment risk",
+    "credit_risk_tier": "Elevated",
+    "calibrated_probability": 0.142,
+    "model_name": "Random Forest (200 Trees)",
+    "model_version": "1.0.0",
+    "loan_product_support_status": "fully_supported_ml",
+    "financial_metrics": {
+      "total_gross_monthly_income": 3800,
+      "total_net_monthly_income": 3116,
+      "proposed_emi": 1461,
+      "annual_interest_rate_pct": 8.5,
+      "dti_pct": 13.2,
+      "foir_pct": 62.9,
+      "disposable_income": -345,
+      "lti_ratio": 4.17,
+      "credit_utilization_pct": 25,
+      "ltv_pct": null
+    },
+    "decision_rationale": "Historical credit repayment delinquency and high loan amount relative to single-applicant income.",
+    "applicant_factors": [
+      {
+        "factor": "Credit History",
+        "impact": "negative",
+        "description": "Documented credit history shows past arrears or missed payments (major historical risk indicator).",
+        "importance": 41.8
+      },
+      {
+        "factor": "Debt Service Burden",
+        "impact": "negative",
+        "description": "Requested loan is disproportionately high relative to single-earner income.",
+        "importance": 34.3
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Proceed to formal verification and KYC check."
+    ],
+    "input_data": {
+      "loan_type": "home",
+      "loan_purpose": "Residential Property Purchase",
+      "loan_amount": 190,
+      "loan_amount_term": 360,
+      "interest_rate": 8.5,
+      "married": "No",
+      "dependents": "0",
+      "education": "Graduate",
+      "self_employed": "Yes",
+      "employment_category": "salaried",
+      "employment_duration_months": 36,
+      "applicant_income": 3800,
+      "net_monthly_income": 3116,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 0,
+      "existing_monthly_emi": 500,
+      "other_monthly_debt": 100,
+      "credit_card_outstanding": 500,
+      "credit_card_limit": 4000,
+      "essential_living_expenses": 1500,
+      "has_credit_history": true,
+      "credit_history": "0",
+      "property_area": "Rural",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  },
+  {
+    "application_id": "LIQ-7B2D05",
+    "submitted_at": "2026-09-30T05:34:23.906Z",
+    "loan_type": "home",
+    "assessment_outcome": "Eligible for further consideration",
+    "credit_risk_tier": "Low",
+    "calibrated_probability": 0.9125,
+    "model_name": "Random Forest (200 Trees)",
+    "model_version": "1.0.0",
+    "loan_product_support_status": "fully_supported_ml",
+    "financial_metrics": {
+      "total_gross_monthly_income": 12000,
+      "total_net_monthly_income": 6970,
+      "proposed_emi": 1692,
+      "annual_interest_rate_pct": 8.5,
+      "dti_pct": 4.2,
+      "foir_pct": 31.4,
+      "disposable_income": 3278,
+      "lti_ratio": 1.53,
+      "credit_utilization_pct": 25,
+      "ltv_pct": null
+    },
+    "decision_rationale": "Combined family income exceeds ₹12,000/mo with pristine credit history documentation.",
+    "applicant_factors": [
+      {
+        "factor": "Credit History",
+        "impact": "positive",
+        "description": "Satisfactory credit history record strongly supports repayment likelihood.",
+        "importance": 41.8
+      },
+      {
+        "factor": "Income-to-Loan Ratio",
+        "impact": "positive",
+        "description": "Excellent income-to-loan coverage of 54.5x.",
+        "importance": 34.3
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Proceed to formal verification and KYC check."
+    ],
+    "input_data": {
+      "loan_type": "home",
+      "loan_purpose": "Residential Property Purchase",
+      "loan_amount": 220,
+      "loan_amount_term": 360,
+      "interest_rate": 8.5,
+      "married": "Yes",
+      "dependents": "2",
+      "education": "Graduate",
+      "self_employed": "No",
+      "employment_category": "salaried",
+      "employment_duration_months": 36,
+      "applicant_income": 8500,
+      "net_monthly_income": 6970,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 3500,
+      "existing_monthly_emi": 500,
+      "other_monthly_debt": 100,
+      "credit_card_outstanding": 500,
+      "credit_card_limit": 4000,
+      "essential_living_expenses": 1500,
+      "has_credit_history": true,
+      "credit_history": "1",
+      "property_area": "Urban",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  },
+  {
+    "application_id": "LIQ-2F8A43",
+    "submitted_at": "2026-09-24T05:34:23.906Z",
+    "loan_type": "home",
+    "assessment_outcome": "Higher estimated repayment risk",
+    "credit_risk_tier": "Elevated",
+    "calibrated_probability": 0.381,
+    "model_name": "Random Forest (200 Trees)",
+    "model_version": "1.0.0",
+    "loan_product_support_status": "fully_supported_ml",
+    "financial_metrics": {
+      "total_gross_monthly_income": 4000,
+      "total_net_monthly_income": 2378,
+      "proposed_emi": 1076,
+      "annual_interest_rate_pct": 8.5,
+      "dti_pct": 12.5,
+      "foir_pct": 66.3,
+      "disposable_income": -698,
+      "lti_ratio": 2.92,
+      "credit_utilization_pct": 25,
+      "ltv_pct": null
+    },
+    "decision_rationale": "Modest aggregate income with multiple dependents and rural collateral valuation threshold.",
+    "applicant_factors": [
+      {
+        "factor": "Debt Service Burden",
+        "impact": "negative",
+        "description": "Monthly repayment represents high percentage of combined household income.",
+        "importance": 34.3
+      },
+      {
+        "factor": "Family Dependents",
+        "impact": "negative",
+        "description": "Higher dependent count (3+) increases non-discretionary household expenses.",
+        "importance": 2.2
+      }
+    ],
+    "missing_or_unverified_items": [],
+    "next_steps": [
+      "Proceed to formal verification and KYC check."
+    ],
+    "input_data": {
+      "loan_type": "home",
+      "loan_purpose": "Residential Property Purchase",
+      "loan_amount": 140,
+      "loan_amount_term": 360,
+      "interest_rate": 8.5,
+      "married": "Yes",
+      "dependents": "3+",
+      "education": "Not Graduate",
+      "self_employed": "No",
+      "employment_category": "salaried",
+      "employment_duration_months": 36,
+      "applicant_income": 2900,
+      "net_monthly_income": 2378,
+      "additional_monthly_income": 0,
+      "coapplicant_income": 1100,
+      "existing_monthly_emi": 500,
+      "other_monthly_debt": 100,
+      "credit_card_outstanding": 500,
+      "credit_card_limit": 4000,
+      "essential_living_expenses": 1500,
+      "has_credit_history": true,
+      "credit_history": "unknown",
+      "property_area": "Rural",
+      "income_verification_status": "verified",
+      "consent_given": true,
+      "declaration_accepted": true
+    }
+  }
+]

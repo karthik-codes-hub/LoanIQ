@@ -1,0 +1,6 @@
+{
+  "name": "LoanIQ — AI-Powered Loan Approval Prediction System",
+  "description": "Smarter Loan Insights, Powered by AI. Explore educational loan predictions using machine learning and historical approval patterns.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
